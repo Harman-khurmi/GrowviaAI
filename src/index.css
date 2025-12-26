@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand colors */
+  --color-primary: #1dbf73;
+  --color-secondary: #005258;
+
+  /* Backgrounds */
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #0f1331;
+
+  /* Text */
+  /* --color-text-primary: #0f2a44; */
+  --color-text-secondary: rgba(15, 42, 68, 0.75);
+  --color-dark-text: #0f2a44;
+  --color-light-text: #f0f0f0;
+  --color-light-text-dull: rgba(240, 240, 240, 0.6);
+
+  /* Borders */
+  --color-border: #cbd5e1;
+  --color-border-light: rgba(15, 42, 68, 0.5);
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  --gradient-button: linear-gradient(
+    180deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+}
+
+@layer utilities {
+  .icon-primary {
+    filter: invert(48%) sepia(93%) saturate(1234%) hue-rotate(129deg) brightness(95%) contrast(101%);
+  }
+  /* Add more if needed, e.g., .icon-blue { filter: ... } */
+}
+
+@layer base {
+  * {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+  }
+  *{
+    @apply lg:cursor-none
+  }
+  
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-7xl font-semibold leading-tight;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold text-dark-text dark:text-light-text;
+  }
+
+  h2>span {
+      @apply text-2xl md:text-3xl lg:text-4xl font-semibold text-dark-text dark:text-light-text; 
+  }
+
+  h3 {
+    @apply text-sm md:text-lg lg:text-xl font-normal text-dark-text dark:text-light-text;
+  }
+
+  p {
+    @apply text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed dark:text-light-text-dull text-dark-text/80;
+  }
+
+  label {
+    @apply text-sm sm:text-base mt-3 mb-1 leading-relaxed font-normal dark:text-light-text/90 text-dark-text/80;
+  }
+  input{
+    @apply p-2 text-sm md:text-base border border-border-light text-dark-text dark:text-light-text dark:border-border/70 rounded-lg  dark:bg-secondary/5 pl-8 w-full  
+  }
+  textarea{
+    @apply p-2 text-sm md:text-base border border-border-light text-dark-text dark:text-light-text dark:border-border/70 rounded-lg  dark:bg-secondary/5  
+  }
+
+}
+
+
+
+@layer components {
+  .btn-primary {
+    background: var(--gradient-button);
+    @apply relative flex items-center justify-between gap-2
+        px-3 md:px-4 py-2 rounded-full cursor-pointer text-white
+        transition-all duration-300 ease-out text-sm md:text-base lg:text-lg shrink-0;
+  }
+
+  .btn-primary:hover {
+    @apply shadow-[0_0_20px_6px_rgba(29,191,115,0.55)] scale-[1.03] dark:shadow-[0_0_20px_6px_rgba(0,82,88,0.55)] ring-2 dark:ring-2 ring-primary/70 dark:ring-secondary/70;
+  }
+
+  .Navbar {
+    @apply flex items-center sticky justify-between z-20 top-0 w-full backdrop-blur-lg py-5 px-6 md:px-12 lg:px-24 bg-bg-light/50 dark:bg-bg-dark/50;
+  } 
+
+  .nav-items {
+    @apply mx-2 lg:mx-4 text-sm md:text-base lg:text-lg text-gray-800 dark:text-white border-primary hidden sm:inline-block shrink-0 transition-all duration-200;
+  }
+  .nav-items:hover {
+    @apply border-b -translate-y-0.5;
+  }
+
+  .navbar-mobile {
+    @apply flex flex-col items-center justify-center bg-primary/60 dark:bg-secondary/75 backdrop-blur-xl font-medium mt-1 rounded-b-xl transform transition-all duration-500 ease-out;
+  }
+
+  .nav-items-mobile {
+    @apply w-full h-full text-center py-4 dark:text-light-text/80 text-dark-text/85 hover:text-dark-text transition-all duration-200 active:bg-bg-light/60 active:text-dark-text hover:dark:text-light-text hover:bg-light-text/10 hover:dark:bg-light-text/5  active:hover:dark:bg-light-text/15;
+  }
+
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .form-icon{
+    @apply absolute ml-2 text-text-secondary dark:text-light-text-dull
+  }
+
+  .animated-gradient {
+    background: linear-gradient(-45deg, #1dbf73, #005258);
+    background-size: 400% 400%;
+    animation: gradient 40s ease infinite;
+    height: fit-content;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+}
+
+@layer components {
+  .card {
+    @apply bg-bg-light rounded-xl p-6 transition-all duration-300;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  }
+
+  .card:hover {
+  }
+}
