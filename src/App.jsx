@@ -52,11 +52,10 @@ const App = () => {
 
   return (
     <>
-      <div className='bg-bg-light relative dark:bg-bg-dark min-h-screen text-dark-text dark:text-light-text transition-colors duration-500 ease-in-out'>
+      <main className='main-page'>
         <Toaster />
         <Navbar theme={theme} setTheme={setTheme} />
-        <main className=' mx-auto overflow-hidden'>
-
+        <div className=' mx-auto overflow-hidden'>
           <Hero />
           <TrustedBy />
           <Services />
@@ -64,13 +63,12 @@ const App = () => {
           <OurTeam />
           <ContactUs />
           <Footer theme={theme} />
-
           {/* custom cursor ring */}
-          <div ref={outlineRef} className='fixed hidden lg:inline-block top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none z-50' style={{transition:'transform 0.1s ease-out'}}></div>
+          <div ref={outlineRef} className='custom-cursor-ring' style={{ transition: 'transform 0.1s ease-out' }}></div>
           {/* custom cursor dot */}
-          <div ref={dotRef} className='fixed hidden lg:inline-block top-0 left-0 h-3 w-3 z-50 rounded-full bg-primary pointer-events-none'></div>
-        </main>
-      </div>
+          <div ref={dotRef} className='custom-cursor-dot'></div>
+        </div>
+      </main>
     </>
   )
 }

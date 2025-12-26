@@ -62,7 +62,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <button type="submit">
-                        <Button text={"Submit"} icon={icons.arrowRightIcon} />
+                        <Button text={"Submit"} icon={IconComponent.arrowRightIcon} />
                     </button>
                 </form>
             </div>
