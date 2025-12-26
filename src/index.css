@@ -138,7 +138,7 @@
     @apply absolute top-90 -left-40 md:top-80 md:-left-60 lg:top-140 lg:-left-70 -z-1;
   }
   .service-card-main {
-    @apply relative mx-auto flex items-center rounded-lg py-7 lg:py-9
+    @apply relative mx-auto flex items-center rounded-lg py-6 lg:py-8
         border-2 border-border/50 dark:border-border/40 dark:bg-text-secondary/30
         transition-all duration-500 ease-out px-8 md:px-6 lg:px-10 lg:pl-18 gap-x-6
         before:absolute before:-inset-1 before:rounded-lg before:p-0.5 before:opacity-0
