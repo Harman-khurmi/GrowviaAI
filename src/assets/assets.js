@@ -1,7 +1,7 @@
-import appLaunch from "./App-launch.png";
-import eCommerce from "./E-commerce.png";
+import appLaunch from "./App-launch.webp";
+import eCommerce from "./E-commerce.webp";
 import heroImage from "./Hero.png";
-import saasPerformance from "./SaaS-Performance.png";
+import saasPerformance from "./SaaS-Performance.webp";
 import darkLogo from "./Logo dark.svg";
 import lightLogo from "./Logo light.svg";
 
