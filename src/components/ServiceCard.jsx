@@ -60,7 +60,7 @@ const ServiceCard = ({ icon, title, description, index }) => {
 
             {/* Content */}
             <div className="relative z-1 flex min-w-[20%]">
-                <img
+                <img loading="lazy"
                     src={icon}
                     alt="service-icons"
                     draggable="false"

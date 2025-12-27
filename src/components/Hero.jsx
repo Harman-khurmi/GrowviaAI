@@ -31,7 +31,7 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.5 }}
                         viewport={{ once: true }}
                         className='flex items-center justify-center border border-border-light dark:border-border/80 gap-2 py-1 px-3 rounded-full'>
-                        <img src={assets.trustedPeople} alt="Trusted People" />
+                        <img loading="eager" fetchpriority="high" src={assets.trustedPeople} alt="Trusted People" />
                         <p>Trusted by 15k+ people</p>
                     </motion.div>
 
@@ -56,7 +56,7 @@ const Hero = () => {
                         transition={{ duration: 0.6, delay: 1.1 }}
                         viewport={{ once: true }}
                         className='lg:w-[80%] md:h-100 lg:h-150 items-center justify-center'>
-                        <img src={assets.heroImage} alt="Hero Image" className='flex lg:rounded-4xl rounded-xl object-cover size-full object-bottom' />
+                        <img loading="eager" fetchpriority="high" src={assets.heroImage} alt="Hero Image" className='flex lg:rounded-4xl rounded-xl object-cover size-full object-bottom' />
                     </motion.div>
                     {/* main content ends */}
                 </div>

@@ -25,7 +25,7 @@ const OurTeam = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               key={index} className='team-card'>
-              <img src={member.image} alt={member.name} className='size-12 md:size-14 lg:size-16  rounded-full shrink-0 object-cover object-top' />
+              <img loading="lazy" src={member.image} alt={member.name} className='size-12 md:size-14 lg:size-16  rounded-full shrink-0 object-cover object-top' />
               <div className='md:text-left '>
                 <h3 className='text-xs shrink-0 md:text-base font-semibold '>{member.name}</h3>
                 <p className='text-text-secondary dark:text-light-text-dull text-xs '>{member.title}</p>

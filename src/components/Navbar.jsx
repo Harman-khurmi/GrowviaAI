@@ -29,7 +29,7 @@ const Navbar = ({ theme, setTheme }) => {
         ref={navbarRef} id="#" className="Navbar text-dark-text dark:text-light-text">
         {/* logo */}
         <a href="#">
-          <img
+          <img loading="eager" fetchpriority="high"
             src={theme === "dark" ? assets.lightLogo : assets.darkLogo}
             alt="logo"
             draggable="false"

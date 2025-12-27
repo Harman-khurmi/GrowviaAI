@@ -25,7 +25,7 @@ const Footer = ({ theme }) => {
                         className='flex flex-col gap-3 w-full'>
                         {/* logo */}
                         <a href="#">
-                            <img
+                            <img loading="lazy"
                                 src={theme === "dark" ? assets.lightLogo : assets.darkLogo}
                                 alt="logo"
                                 draggable="false"
@@ -75,7 +75,7 @@ const Footer = ({ theme }) => {
                         <div className='flex items-center gap-3'>
                             {socialMedia.map((item, index) => (
                                 <a key={index} href={item.link}>
-                                    <img src={item.icon} alt={item.name} />
+                                    <img loading="lazy" src={item.icon} alt={item.name} />
                                 </a>
                             ))}
                         </div>
