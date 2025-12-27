@@ -22,15 +22,20 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { CgMenuRight } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
 
-import girl1 from "./people/girl1.jpg";
 import girl2 from "./people/girl2.jpg";
-import girl3 from "./people/girl3.jpg";
 import girl4 from "./people/girl4.jpg";
-import man1 from "./people/man1.jpg";
-import man2 from "./people/man2.jpg";
-import man3 from "./people/man3.jpg";
+import girl6 from "./people/girl6.jpg";
+import girl8 from "./people/girl8.jpg";
 import man4 from "./people/man4.jpg";
+import man5 from "./people/man5.jpg";
+import man10 from "./people/man10.jpg";
+import Harman from "./people/me-formal-side.jpg";
 
+import facebook from "./social-media/facebook_icon.svg"
+import instagram from "./social-media/instagram_icon.svg"
+import linkedin from "./social-media/linkedin_icon.svg"
+import twitter from "./social-media/twitter_icon.svg"
+ 
 import performance from "./performance-svgrepo-com.svg";
 import growth from "./business-growth-progress-svgrepo-com.svg";
 import marketing from "./marketing-svgrepo-com.svg";
@@ -80,16 +85,6 @@ export const icons = {
     closeIcon: CgClose
 }
 
-export const randomPeople = [
-    { name: "Alice Johnson", image: girl1 },
-    { name: "Diana Prince", image: girl2 },
-    { name: "Fiona Green", image: girl3 },
-    { name: "Hannah White", image: girl4 },
-    { name: "Bob Smith", image: man1 },
-    { name: "Charlie Brown", image: man2 },
-    { name: "Ethan Hunt", image: man3 },
-    { name: "George Martin", image: man4 },
-]
 
 export const serviceDate = [
     {
@@ -136,65 +131,65 @@ export const teamData = [
     {
         "name": "Arjun Malhotra",
         "title": "Founder & CEO",
-        "image": "/src/assets/people/man10.jpg"
+        "image": man10
     },
     {
         "name": "Aanya Kapoor",
         "title": "Brand Strategy",
-        "image": "/src/assets/people/girl2.jpg"
+        "image": girl2
     },
     {
         "name": "Daniel Brooks",
         "title": "Creative Director",
-        "image": "/src/assets/people/man5.jpg"
+        "image": man5
     },
     {
         "name": "Harman Khurmi",
         "title": "Creative Designer",
-        "image": "/src/assets/people/me-formal-side.jpg"
+        "image": Harman
     },
     {
         "name": "Rohit Verma",
         "title": "Senior Writer",
-        "image": "/src/assets/people/man4.jpg"
+        "image": man4
     },
     {
         "name": "Sophia Martinez",
         "title": "Content Manager",
-        "image": "/src/assets/people/girl4.jpg"
+        "image": girl4
     },
     {
         "name": "Neha Sharma",
         "title": "Success Manager",
-        "image": "/src/assets/people/girl6.jpg"
+        "image": girl6
     },
     {
         "name": "Olivia Bennett",
         "title": "Senior Analyst",
-        "image": "/src/assets/people/girl8.jpg"
+        "image": girl8
     }
 ];
 
 export const socialMedia = [
     {
-        name : "Facebook",
-        icon : "/src/assets/social-media/facebook_icon.svg",
-        link : "https://www.facebook.com"
+        name: "Facebook",
+        icon: facebook,
+        link: "https://www.facebook.com"
     },
     {
-        name : "Instagram",
-        icon : "/src/assets/social-media/instagram_icon.svg",
-        link : "https://www.instagram.com"
+        name: "Instagram",
+        icon: instagram,
+        link: "https://www.instagram.com"
     },
     {
-        name : "LinkedIn",
-        icon : "/src/assets/social-media/linkedin_icon.svg",
-        link : "https://www.linkedin.com"
+        name: "LinkedIn",
+        icon: linkedin,
+        link: "https://www.linkedin.com"
     },
     {
-        name : "Twitter",
-        icon : "/src/assets/social-media/twitter_icon.svg",
-        link : "https://www.x.com"
+        name: "Twitter",
+        icon: twitter,
+        link: "https://www.x.com"
     },
 ]
 
