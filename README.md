@@ -19,7 +19,7 @@ The entire project — including **branding, UI design, animations, and implemen
 ## 🌐 Live Demo
 
 🔗 **Live Website**  
-👉 **YOUR_LIVE_LINK_HERE**
+👉 **[Deployed Link :](https://growvia-ai.vercel.app/)**
 
 ---
 
