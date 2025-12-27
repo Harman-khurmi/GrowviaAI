@@ -90,10 +90,10 @@ All visuals were designed from scratch in **Figma**, including:
 ![Services Section](screenshots/services.webp)
 
 ### Team Section
-![Team Section](screenshots/our-team.png)
+![Team Section](screenshots/our-team.webp)
 
-### Design Mockups
-![Design Mockup](screenshots/design-mockup.png)
+<!-- ### Design Mockups
+![Design Mockup](screenshots/design-mockup.png) -->
 
 ---
 
