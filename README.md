@@ -97,7 +97,7 @@ All visuals were designed from scratch in **Figma**, including:
 
 ---
 
-## 🎥 Video Preview
+<!-- ## 🎥 Video Preview
 
 ### Option 1 — GitHub-Hosted Video
-![GrowviaAI Demo](demo/Growviaai-low.mp4)
+![GrowviaAI Demo](demo/Growviaai-low.mp4) -->
