@@ -9,6 +9,8 @@
 
 ## 🚀 Project Overview
 
+![GrowviaAI Demo](demo/GrowviaAI.mp4)
+
 **GrowviaAI** is a modern, responsive website for an AI-powered advertising agency.  
 This project was built as a **full-scale personal learning project** to showcase modern frontend development, UI/UX design, motion design, and performance optimization using the latest web technologies.
 
@@ -19,7 +21,7 @@ The entire project — including **branding, UI design, animations, and implemen
 ## 🌐 Live Demo
 
 🔗 **Live Website**  
-👉 **[Deployed Link :](https://growvia-ai.vercel.app/)**
+👉 **[Growvia.ai](https://growvia-ai.vercel.app/)**
 
 ---
 
@@ -75,7 +77,7 @@ All visuals were designed from scratch in **Figma**, including:
 - Layout system and interaction design
 
 🔗 **Figma Design File**  
-👉 **YOUR_FIGMA_LINK_HERE**
+👉 **[Growvia.ai figma design](https://www.figma.com/design/19hEOjkMmu3udHZQu8Z8ng/Growvia.ai?node-id=0-1&t=ga7uQavmj8BkmwGn-1)**
 
 ---
 
@@ -84,13 +86,13 @@ All visuals were designed from scratch in **Figma**, including:
 Create a `screenshots/` folder in the repository and add your images.
 
 ### Hero Section
-![Hero Section](screenshots/hero.png)
+![Hero Section](screenshots/home.webp)
 
 ### Services Section
-![Services Section](screenshots/services.png)
+![Services Section](screenshots/services.webp)
 
 ### Team Section
-![Team Section](screenshots/team.png)
+![Team Section](screenshots/our-team.png)
 
 ### Design Mockups
 ![Design Mockup](screenshots/design-mockup.png)
@@ -100,9 +102,4 @@ Create a `screenshots/` folder in the repository and add your images.
 ## 🎥 Video Preview
 
 ### Option 1 — GitHub-Hosted Video
-1. Create a `demo/` folder
-2. Add your video file (e.g. `demo/growviaai-demo.mp4`)
-3. Add this to README:
-
-```md
-![GrowviaAI Demo](demo/growviaai-demo.mp4)
+![GrowviaAI Demo](demo/GrowviaAI.mp4)
