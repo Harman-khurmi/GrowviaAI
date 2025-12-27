@@ -1,16 +1,108 @@
-# React + Vite
+# GrowviaAI — AI-Powered Advertising Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-19.2.0-blue.svg)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.2.4-646CFF.svg)](https://vitejs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.18-38B2AC.svg)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23.26-0055FF.svg)](https://www.framer.com/motion/)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Project Overview
 
-## React Compiler
+**GrowviaAI** is a modern, responsive website for an AI-powered advertising agency.  
+This project was built as a **full-scale personal learning project** to showcase modern frontend development, UI/UX design, motion design, and performance optimization using the latest web technologies.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The entire project — including **branding, UI design, animations, and implementation** — was created from scratch. It represents a real-world, production-quality business website focused on growth marketing, performance advertising, creative strategy, and AI-driven analytics.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌐 Live Demo
+
+🔗 **Live Website**  
+👉 **YOUR_LIVE_LINK_HERE**
+
+---
+
+## 🎯 Key Highlights
+
+- Designed and developed completely from scratch
+- Clean, professional UI suitable for a real business
+- Motion-driven interactions and smooth animations
+- Fully responsive and mobile-first
+- Optimized assets and performance-focused build
+
+---
+
+## 🛠️ Tech Stack & Tools
+
+### Frontend
+- **React 19** — Component-based architecture
+- **Vite 7** — Fast builds and development
+- **Tailwind CSS 4** — Utility-first styling
+- **Framer Motion 12** — Animations and transitions
+
+### Libraries & Utilities
+- React Icons
+- React Hot Toast
+- ESLint
+
+### Design & Assets
+- **Figma** — UI/UX design and prototyping
+- Custom logos, illustrations, textures, and graphics
+
+---
+
+## ✨ Features
+
+- Responsive design across all screen sizes
+- Dark / Light theme toggle with persistence
+- Animated navigation and mobile menu
+- Scroll-triggered animations
+- Custom animated cursor
+- Interactive contact form with toast notifications
+- Optimized images and assets
+- Semantic HTML and accessibility-friendly structure
+
+---
+
+## 🎨 Design Process
+
+All visuals were designed from scratch in **Figma**, including:
+
+- GrowviaAI logo design
+- Brand color palette and gradients
+- Reusable UI components
+- Layout system and interaction design
+
+🔗 **Figma Design File**  
+👉 **YOUR_FIGMA_LINK_HERE**
+
+---
+
+## 📸 Screenshots & Mockups
+
+Create a `screenshots/` folder in the repository and add your images.
+
+### Hero Section
+![Hero Section](screenshots/hero.png)
+
+### Services Section
+![Services Section](screenshots/services.png)
+
+### Team Section
+![Team Section](screenshots/team.png)
+
+### Design Mockups
+![Design Mockup](screenshots/design-mockup.png)
+
+---
+
+## 🎥 Video Preview
+
+### Option 1 — GitHub-Hosted Video
+1. Create a `demo/` folder
+2. Add your video file (e.g. `demo/growviaai-demo.mp4`)
+3. Add this to README:
+
+```md
+![GrowviaAI Demo](demo/growviaai-demo.mp4)
