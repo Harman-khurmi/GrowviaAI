@@ -6,7 +6,7 @@ import Button from "./Button";
 import MobileNavbar from "./MobileNavbar";
 import ThemeToggleBtn from "./ThemeToggleBtn";
 // eslint-disable-next-line no-unused-vars
-import { easeInOut, motion } from "motion/react";
+import { easeInOut, motion, AnimatePresence } from "motion/react";
 
 const Navbar = ({ theme, setTheme }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -21,10 +21,10 @@ const Navbar = ({ theme, setTheme }) => {
 
   return (
     <>
-      <motion.div
+      <motion.nav
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease:easeInOut}}
+        transition={{ duration: 0.6, ease: easeInOut }}
 
         ref={navbarRef} id="#" className="Navbar text-dark-text dark:text-light-text">
         {/* logo */}
@@ -76,11 +76,11 @@ const Navbar = ({ theme, setTheme }) => {
 
         </div>
 
-      </motion.div>
+      </motion.nav>
 
       {/* Mobile Navbar */}
       <div className="relative z-10">
-        {isSidebarOpen && <MobileNavbar isOpen={isSidebarOpen} navbarHeight={navbarHeight} />}
+        <MobileNavbar isOpen={isSidebarOpen} navbarHeight={navbarHeight} />
       </div>
     </>
   );
