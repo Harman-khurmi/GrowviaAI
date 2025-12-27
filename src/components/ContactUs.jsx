@@ -14,7 +14,7 @@ const ContactUs = () => {
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
-        formData.append("access_key", import.meta.env.VITE_API_KEY);
+        formData.append("access_key", "1af627c9-b462-4b52-ab1f-5ce1ebb1cc6f");
         console.log(import.meta.env.VITE_API_KEY)
 
         try {
