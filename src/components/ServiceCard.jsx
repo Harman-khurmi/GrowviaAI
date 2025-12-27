@@ -1,6 +1,8 @@
 import { useState } from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'motion/react';
 
-const ServiceCard = ({ icon, title, description }) => {
+const ServiceCard = ({ icon, title, description, index }) => {
     const [active, setActive] = useState(false);
 
     const handleMove = (e) => {
@@ -13,7 +15,12 @@ const ServiceCard = ({ icon, title, description }) => {
     };
 
     return (
-        <div
+        <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            // animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7, delay: index * 0.2 }}
             onMouseMove={handleMove}
             onMouseEnter={() => setActive(true)}
             onMouseLeave={() => setActive(false)}
@@ -26,11 +33,7 @@ const ServiceCard = ({ icon, title, description }) => {
         >
             {/* Gradient Border Layer */}
             <div
-                className={`
-          pointer-events-none absolute -inset-1 rounded-xl
-          opacity-0 transition-opacity duration-500
-          ${active ? "opacity-100" : "group-hover:opacity-100"}
-        `}
+                className={`pointer-events-none absolute -inset-1 rounded-xl opacity-0 transition-opacity duration-500 ${active ? "opacity-100" : "group-hover:opacity-100"}`}
                 style={{
                     background: `
             radial-gradient(
@@ -61,9 +64,7 @@ const ServiceCard = ({ icon, title, description }) => {
                     src={icon}
                     alt="service-icons"
                     draggable="false"
-                    className="
-service-card-icon icon-primary
-          "
+                    className="service-card-icon icon-primary"
                 />
             </div>
 
@@ -73,7 +74,7 @@ service-card-icon icon-primary
                     {description}
                 </p>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

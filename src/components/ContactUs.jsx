@@ -4,6 +4,8 @@ import { icons } from "../assets/assets";
 import { GoPerson } from "react-icons/go";
 import { CiMail } from "react-icons/ci";
 import toast from 'react-hot-toast';
+// eslint-disable-next-line no-unused-vars
+import { easeIn, motion } from 'motion/react';
 const IconComponent = icons;
 
 const ContactUs = () => {
@@ -34,12 +36,23 @@ const ContactUs = () => {
 
     return (
         <section id='contactUs'>
-            <div className='container  flex flex-col text-center gap-3 items-center justify-center mx-auto px-6 py-12 mt-6 md:mt-8 lg:mt-12'>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ staggerChildren: 0.2 }}
+                className='container  flex flex-col text-center gap-3 items-center justify-center mx-auto px-6 py-12 mt-6 md:mt-8 lg:mt-12'>
                 <Title title={"Let's grow your business"} description={"Tell us about your goals, and we'll show you how smarter advertising can unlock your next stage of growth."} />
 
-                <form onSubmit={onSubmit} className='w-[90%] md:w-[75%] lg:w-[50%] flex flex-col gap-6'>
+                <motion.form
+                    onSubmit={onSubmit} className='w-[90%] md:w-[75%] lg:w-[50%] flex flex-col gap-6'>
                     <div className='flex flex-col mt-6 md:mt-8 lg:mt-10 w-full'>
-                        <div className='flex flex-col md:flex-row  text-left justify-center gap-x-8'>
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.3 }}
+                            transition={{ duration: 0.5, delay: 0.1, ease: easeIn }}
+                            className='flex flex-col md:flex-row  text-left justify-center gap-x-8'>
                             <div className='flex flex-col items-left w-full'>
                                 <label htmlFor="" className=''>Your Name</label>
                                 <div className='flex w-full items-center'>
@@ -54,18 +67,28 @@ const ContactUs = () => {
                                     <input type="email" name="email" id="" placeholder='Enter your Email' required />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className='flex flex-col text-left'>
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.3 }}
+                            transition={{ duration: 0.5, delay: 0.1, ease: easeIn }}
+                            className='flex flex-col text-left'>
                             <label htmlFor="">Message</label>
                             <textarea name="message" id="" rows="8" placeholder='Enter your Message' required></textarea>
-                        </div>
+                        </motion.div>
                     </div>
-                    <button type="submit">
+                    <motion.button
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.5, delay: 0.1, ease: easeIn }}
+                        type="submit">
                         <Button text={"Submit"} icon={IconComponent.arrowRightIcon} />
-                    </button>
-                </form>
-            </div>
+                    </motion.button>
+                </motion.form>
+            </motion.div>
         </section>
     )
 }
