@@ -83,8 +83,6 @@ All visuals were designed from scratch in **Figma**, including:
 
 ## 📸 Screenshots & Mockups
 
-Create a `screenshots/` folder in the repository and add your images.
-
 ### Hero Section
 ![Hero Section](screenshots/home.webp)
 
