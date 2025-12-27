@@ -9,7 +9,7 @@
 
 ## 🚀 Project Overview
 
-![GrowviaAI Demo](demo/GrowviaAI.mp4)
+![GrowviaAI Demo](demo/GrowviaAI.gif)
 
 **GrowviaAI** is a modern, responsive website for an AI-powered advertising agency.  
 This project was built as a **full-scale personal learning project** to showcase modern frontend development, UI/UX design, motion design, and performance optimization using the latest web technologies.
