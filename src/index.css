@@ -150,4 +150,7 @@
   .team-card {
     @apply flex flex-col md:flex-row items-center justify-center gap-2 md:gap-x-4  border-2 border-border/50 dark:border-border/40 hover:shadow-xl dark:hover:shadow-border-light/80 hover:shadow-border-light/10 dark:bg-text-secondary/30 transition-all duration-400 ease-out  rounded-lg hover:scale-[1.03] p-4 md:p-3;
   }
+  .section-offset {
+  scroll-margin-top: 90px; /* match navbar height */
+}
 }
