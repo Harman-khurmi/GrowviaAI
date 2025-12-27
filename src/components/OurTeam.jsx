@@ -5,7 +5,7 @@ import { teamData } from '../assets/assets'
 import { motion } from 'motion/react';
 const OurTeam = () => {
   return (
-    <section id="OurTeam">
+    <section id="OurTeam" className='section-offset'>
       <motion.div
         initial="hidden"
         whileInView="visible"

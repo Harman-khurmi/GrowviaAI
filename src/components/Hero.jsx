@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 const Hero = () => {
     return (
         <>
-            <section id='Hero' className='relative '>
+            <section id='Hero' className='relative section-offset'>
                 <div className="container z-1 relative items-center flex flex-col mx-auto px-6 py-16 text-center gap-4 md:gap-5 lg:gap-7">
 
                     {/* gradient images */}

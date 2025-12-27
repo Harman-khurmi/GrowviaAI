@@ -35,7 +35,7 @@ const ContactUs = () => {
     };
 
     return (
-        <section id='contactUs'>
+        <section id='contactUs' className='section-offset'>
             <motion.div
                 initial="hidden"
                 whileInView="visible"

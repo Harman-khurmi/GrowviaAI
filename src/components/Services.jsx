@@ -7,7 +7,7 @@ import { motion } from 'motion/react';
 const Services = () => {
     return (
         <>
-            <section id='Services'>
+            <section id='Services' className="section-offset">
                 <div
                     // initial="hidden"
                     // whileInView="visible"

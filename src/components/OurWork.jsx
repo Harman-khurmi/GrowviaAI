@@ -7,7 +7,7 @@ import { easeInOut, motion } from 'motion/react';
 
 const OurWork = () => {
     return (
-        <section id="OurWork">
+        <section id="OurWork" className='section-offset'>
             <motion.div
                 initial="hidden"
                 whileInView="visible"
