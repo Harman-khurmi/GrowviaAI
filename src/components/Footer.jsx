@@ -29,7 +29,7 @@ const Footer = ({ theme }) => {
                                 src={theme === "dark" ? assets.lightLogo : assets.darkLogo}
                                 alt="logo"
                                 draggable="false"
-                                className="max-w-32 cursor-pointer"
+                                className="max-w-32 "
                             />
                         </a>
                         <p className='text-left lg:text-base w-[75%] md:w-[90%] lg:w-[50%]'>From strategy to execution, we craft digital solutions that move your business forward.</p>

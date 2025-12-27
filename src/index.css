@@ -87,7 +87,7 @@
   .btn-primary {
     background: var(--gradient-button);
     @apply relative flex items-center justify-between gap-2
-        px-3 md:px-4 py-2 rounded-full cursor-pointer text-white
+        px-3 md:px-4 py-2 rounded-full  text-white
         transition-all duration-300 ease-out text-sm md:text-base lg:text-lg shrink-0;
   }
 
