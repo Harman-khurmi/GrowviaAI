@@ -84,7 +84,7 @@ const ContactUs = () => {
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ duration: 0.5, delay: 0.1, ease: easeIn }}
                         type="submit">
-                        <Button text={"Submit"} icon={IconComponent.arrowRightIcon} />
+                        <Button text={"Submit"} name={"Submit"} icon={IconComponent.arrowRightIcon} />
                     </motion.button>
                 </motion.form>
             </motion.div>

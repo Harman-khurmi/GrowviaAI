@@ -59,11 +59,12 @@ const Navbar = ({ theme, setTheme }) => {
 
           {/* contact us btn */}
           <span className="hidden md:inline-block">
-            <Button text={"Contact Us"} icon={icons.arrowRightIcon} location={"#contactUs"} />
+            <Button name={"contact us"} text={"Contact Us"} icon={icons.arrowRightIcon} location={"#contactUs"} />
           </span>
 
           {/* Hamburger menu button */}
           <button
+            name="menu button"
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             className="md:hidden justify-end flex dark:text-light-text text-dark-text"
           >

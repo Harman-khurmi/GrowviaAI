@@ -58,7 +58,7 @@ const Footer = ({ theme }) => {
                         </div>
                         <div className='flex flex-1 gap-3'>
                             <input type="text" className='w-48 sm:w-50 md:w-60 lg:w-72 pl-2' placeholder='Enter your Email' />
-                            <Button text={"Subscribe"} icon={icons.arrowRightIcon} />
+                            <Button text={"Subscribe"} name={"Subscribe"} icon={icons.arrowRightIcon} />
                         </div>
                     </motion.div>
                 </div>

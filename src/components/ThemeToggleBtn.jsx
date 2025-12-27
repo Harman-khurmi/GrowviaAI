@@ -16,13 +16,15 @@ const ThemeToggleBtn = ({ theme, setTheme }) => {
             <div>
                 {theme === "light" ? (
                     <button
+                        name='theme toggle button'
                         onClick={() => setTheme("dark")}
                         className="bg-bg-light/60 text-dark-text rounded-full border hover:border-bg-dark p-1 md:p-2 hover:bg-bg-dark hover:text-white transition-all duration-200 "
                     >
                         <IconComponent.darkIcon className="stroke-2" />
                     </button>
                 ) : (
-                    <button
+                        <button
+                            name='theme toggle button'
                         onClick={() => setTheme("light")}
                         className="text-white bg-transparent rounded-full border p-1 md:p-2 hover:border-bg-light hover:bg-bg-light hover:text-dark-text transition-all duration-200 "
                     >
