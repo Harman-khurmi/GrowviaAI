@@ -41,6 +41,19 @@
     filter: invert(48%) sepia(93%) saturate(1234%) hue-rotate(129deg)
       brightness(95%) contrast(101%);
   }
+.icon-dark-blue {
+  filter: 
+    brightness(0)
+    saturate(100%)
+    invert(18%)
+    sepia(28%)
+    saturate(1200%)
+    hue-rotate(200deg)
+    brightness(85%)
+    contrast(95%);
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
 }
 
 @layer base {
@@ -100,7 +113,7 @@
   }
 
   .nav-items {
-    @apply mx-2 lg:mx-4 text-sm md:text-base lg:text-lg text-gray-800 dark:text-white border-primary hidden sm:inline-block shrink-0 transition-all duration-200;
+    @apply mx-2 lg:mx-4 text-sm  lg:text-lg text-gray-800 dark:text-white border-primary hidden sm:inline-block shrink-0 transition-all duration-200;
   }
   .nav-items:hover {
     @apply border-b -translate-y-0.5;

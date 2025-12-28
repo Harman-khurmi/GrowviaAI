@@ -1,6 +1,7 @@
 import React from 'react'
 import assets, { icons, navItems, socialMedia } from '../assets/assets'
 import Button from './Button'
+const SocialMedia = socialMedia.icon;
 // eslint-disable-next-line no-unused-vars
 import { easeIn, motion } from 'motion/react';
 const Footer = ({ theme }) => {
@@ -21,7 +22,7 @@ const Footer = ({ theme }) => {
                         // animate={{ opacity: 1, x: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, amount: 0.3 }}
-                        transition={{ duration: 0.6, delay: 0.2, ease:easeIn }}
+                        transition={{ duration: 0.6, delay: 0.2, ease: easeIn }}
                         className='flex flex-col gap-3 w-full'>
                         {/* logo */}
                         <a href="#">
@@ -50,7 +51,7 @@ const Footer = ({ theme }) => {
                         // animate={{ opacity: 1, x: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, amount: 0.3 }}
-                        transition={{ duration: 0.6, delay: 0.3, ease:easeIn }}
+                        transition={{ duration: 0.6, delay: 0.3, ease: easeIn }}
                         className='items-start gap-3 flex flex-col'>
                         <div className='text-start flex flex-col items-start justify-center content-start'>
                             <h4 className='font-semibold'>Subscribe to our Newsletter</h4>
@@ -65,7 +66,7 @@ const Footer = ({ theme }) => {
                 <motion.div
                     initial={{ opacity: 0 }}
                     // animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.35 , ease:easeIn }}
+                    transition={{ duration: 0.5, delay: 0.35, ease: easeIn }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true, amount: 0.3 }}
                     className='flex flex-col '>
@@ -75,7 +76,7 @@ const Footer = ({ theme }) => {
                         <div className='flex items-center gap-3'>
                             {socialMedia.map((item, index) => (
                                 <a key={index} href={item.link}>
-                                    <img loading="lazy" src={item.icon} alt={item.name} />
+                                    <img loading="lazy" className='h-4.5 lg:h-5 opacity-20 dark:opacity-75' src={theme === "dark" ? item.icon : item.iconDark} alt={item.name} />
                                 </a>
                             ))}
                         </div>

@@ -31,10 +31,14 @@ import man5 from "./people/man5.jpg";
 import man10 from "./people/man10.jpg";
 import Harman from "./people/me-formal-side.jpg";
 
-import facebook from "./social-media/facebook_icon.svg"
-import instagram from "./social-media/instagram_icon.svg"
-import linkedin from "./social-media/linkedin_icon.svg"
-import twitter from "./social-media/twitter_icon.svg"
+import Github from "./social-media/github.svg"
+import Linkedin from "./social-media/linkedin.svg"
+import Figma from "./social-media/figma.svg"
+import Behance from "./social-media/behance.svg"
+import GithubDark from "./social-media/github-dark.svg"
+import LinkedinDark from "./social-media/linkedin-dark.svg"
+import FigmaDark from "./social-media/figma-dark.svg"
+import BehanceDark from "./social-media/behance-dark.svg"
  
 import performance from "./performance-svgrepo-com.svg";
 import growth from "./business-growth-progress-svgrepo-com.svg";
@@ -172,24 +176,28 @@ export const teamData = [
 
 export const socialMedia = [
     {
-        name: "Facebook",
-        icon: facebook,
-        link: "https://www.facebook.com"
+        name: "Github",
+        icon: Github,
+        iconDark: GithubDark,
+        link: "https://github.com/Harman-khurmi"
     },
     {
-        name: "Instagram",
-        icon: instagram,
-        link: "https://www.instagram.com"
+        name: "Figma",
+        icon: Figma,
+        iconDark: FigmaDark,
+        link: "https://www.figma.com/@harmankhurmi"
     },
     {
         name: "LinkedIn",
-        icon: linkedin,
-        link: "https://www.linkedin.com"
+        icon: Linkedin,
+        iconDark: LinkedinDark,
+        link: "https://www.linkedin.com/in/harmankhurmi/"
     },
     {
-        name: "Twitter",
-        icon: twitter,
-        link: "https://www.x.com"
+        name: "Behance",
+        icon: Behance,
+        iconDark: BehanceDark,
+        link: "https://www.behance.net/harmankhurmi"
     },
 ]
 

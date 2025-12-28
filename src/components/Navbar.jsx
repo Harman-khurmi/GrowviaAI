@@ -33,7 +33,7 @@ const Navbar = ({ theme, setTheme }) => {
             src={theme === "dark" ? assets.lightLogo : assets.darkLogo}
             alt="logo"
             draggable="false"
-            className="max-w-36 "
+            className="max-w-32 md:max-w-36 "
           />
         </a>
         {/* sidebar toggle button */}

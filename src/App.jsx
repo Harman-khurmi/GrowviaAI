@@ -10,8 +10,7 @@ import { Toaster } from 'react-hot-toast';
 import Footer from './components/Footer';
 
 const App = () => {
-
-  // const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : 'light');
+  
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem("theme");
     return saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");

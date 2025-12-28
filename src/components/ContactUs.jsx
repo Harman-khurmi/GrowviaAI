@@ -54,14 +54,14 @@ const ContactUs = () => {
                             className='flex flex-col md:flex-row  text-left justify-center gap-x-8'>
                             <div className='flex flex-col items-left w-full'>
                                 <label htmlFor="" className=''>Your Name</label>
-                                <div className='flex w-full items-center'>
+                                <div className='flex w-full items-center relative'>
                                     <GoPerson className='form-icon' />
                                     <input type="text" name="name" id="" placeholder='Enter your Name' required />
                                 </div>
                             </div>
                             <div className='flex flex-col  items-left justify-center w-full'>
                                 <label htmlFor="">Your Email</label>
-                                <div className='flex w-full items-center'>
+                                <div className='flex w-full items-center relative'>
                                     <CiMail className='form-icon' />
                                     <input type="email" name="email" id="" placeholder='Enter your Email' required />
                                 </div>
