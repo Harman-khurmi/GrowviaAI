@@ -32,7 +32,7 @@ const Hero = () => {
                         viewport={{ once: true }}
                         className='flex items-center justify-center border border-border-light dark:border-border/80 gap-2 py-1 px-3 rounded-full'>
                         <img loading="eager" fetchpriority="high" src={assets.trustedPeople} alt="Trusted People" />
-                        <p>Trusted by 15k+ people</p>
+                        <p>Trusted by 12k+ people</p>
                     </motion.div>
 
                     <div
