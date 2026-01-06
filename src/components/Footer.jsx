@@ -72,7 +72,7 @@ const Footer = ({ theme }) => {
                     className='flex flex-col '>
                     <hr className='border-t-secondary/40 my-4 md:my-6' />
                     <div className='flex flex-col gap-3 md:gap-0 items-center md:flex-row md:justify-between'>
-                        <div className='text-text-secondary/60 dark:text-light-text-dull text-sm'>Copyright 2025 © Growvia.ai  -  All Right Reserved.</div>
+                        <div className='text-text-secondary/60 dark:text-light-text-dull text-sm'>Copyright 2026 © Growvia.ai  -  All Right Reserved.</div>
                         <div className='flex items-center gap-3'>
                             {socialMedia.map((item, index) => (
                                 <a key={index} href={item.link}>
