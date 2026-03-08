@@ -102,13 +102,3 @@ All visuals were designed from scratch in **Figma**, including:
 ### Option 1 — GitHub-Hosted Video
 ![GrowviaAI Demo](demo/Growviaai-low.mp4) -->
 
-## ⚖️ License & Usage
-
-This project is a **personal portfolio project** created by **Harman Khurmi**.
-
-The source code is publicly visible for **recruiters, reviewers, and educational reference only**.
-
-You are **not allowed to copy, redistribute, modify, or claim this project as your own work**.
-
-If you would like to use any part of this project, please contact the author for permission.
-
