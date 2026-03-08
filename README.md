@@ -1,4 +1,4 @@
-# GrowviaAI — AI-Powered Advertising Website
+# GrowviaAI - AI-Powered Advertising Website
 
 [![React](https://img.shields.io/badge/React-19.2.0-blue.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.2.4-646CFF.svg)](https://vitejs.org/)
