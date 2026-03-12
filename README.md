@@ -21,7 +21,7 @@ The entire project — including **branding, UI design, animations, and implemen
 ## 🌐 Live Demo
 
 🔗 **Live Website**  
-👉 **[GrowviaAI](https://growvia-ai.vercel.app/)**
+👉 **[GrowviaAI](https://growvia.harmancodes.site/)**
 
 ---
 
